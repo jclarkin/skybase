@@ -1,0 +1,45 @@
+extends layout
+block title
+  title skybase - Marketplace
+block body
+  div(class="jumbotron")
+    div(class="container")
+      h1 Maintenance Marketplace!
+      p
+        | From roles and interface configuration templates to assembly and 
+        | aircraft baselines, you can get it all in one place. Sign in with your 
+        | Marketplace account and have the templates installed directly 
+        | to your server!
+      p 
+        a(class="btn btn-primary btn-lg") Learn more &raquo;
+    
+  div(class="container")
+    div(class="row")
+      div(class="col-lg-3")
+        h2 Assembly Baselines
+        p
+          | Got an inbound new airframe asset? These baselines are great for 
+          | getting you setup in minutes so that you're ready for induction 
+          | before the rubber hits the tarmac!
+        p: a(class="btn btn-default", href="assemblies.html") View details &raquo;
+      div(class="col-lg-3")
+        h2 Maintenance Programs
+        p
+          | Ensure your aircraft compliance with these well crafted digital 
+          | Maintenance Planning Documents. Whether it's and Embraer 190 or a 
+          | Boeing 787 we've got you covered.
+        p: a(class="btn btn-default", href="maintprogs.html") View details &raquo;
+      div(class="col-lg-3")
+        h2 Parts Catalogs
+        p
+          | Why invest time and effort typing in the parts catalogues of your 
+          | favorite manufacturers when you can grab our digital version 
+          | instead? Select the parts you approve and go!
+        p: a(class="btn btn-default", href="partcatalogs.html") View details &raquo;
+      div(class="col-lg-3")
+        h2 Role Templates
+        p
+          | Improving your business processes and defining new roles? Rather 
+          | than manually configuring your systems, try our industry tested 
+          | pre-configured roles.
+        p: a(class="btn btn-default", href="roles.html") View details &raquo;

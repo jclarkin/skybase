@@ -1,0 +1,31 @@
+@media (min-width: 1009px) {
+  /* Move down content because we have a fixed navbar that is 50px tall */
+  body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1008px) { 
+  /* Move down content because we have a fixed navbar that is 50px tall */
+  body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }  
+}
+
+@media (max-width: 784px) { 
+  /* Move down content because we have a fixed navbar that is 50px tall */
+  body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }  
+}
+
+
+/* clouds on the jumbo tron */
+.jumbotron {
+  background-image: url(http://www.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}

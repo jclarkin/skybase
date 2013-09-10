@@ -1,0 +1,60 @@
+extends layout
+block title
+  title skybase - Roles
+  
+block links
+  link(rel="stylesheet", href="stylesheets/assemblies.css")
+  
+block body
+  div(class="container")
+    h1 Roles
+
+    div(class="row")
+      div(class="col-lg-4")
+        div(class="panel panel-default role")
+          div(class="panel-heading", data-code="LINETECH")
+            h4 Line Technician
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          
+          div(class="panel-body")
+            img(src="http://goo.gl/Qjf4bv")
+            p 
+            | The line technician is a simple creature, foraging through 
+            | planes for things to fix. He will often require parts and tools 
+            | from a storeroom clerk.
+      
+      div(class="col-lg-4")
+        div(class="panel panel-default role")
+          div(class="panel-heading", data-code="STRMCLERK")
+            h4 Storeroom Clerk
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          
+          div(class="panel-body")
+            img(src="http://goo.gl/eNFTdD")
+            p The storeroom clerk's role is to fill up baskets with goodies.
+      
+      div(class="col-lg-4")
+        div(class="panel panel-default role")
+          div(class="panel-heading", data-code="ENG")
+            h4 Engineer
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          
+          div(class="panel-body")
+            img(src="http://goo.gl/54NSiV")
+            p 
+            | The engineer designs and operates the megastructures. 
+            | They are more commonly known as 'Morlocks' amongst the Eloi.
+      
+  div(class="modal fade", id="loadingScreen", tabindex="-1", role="dialog", aria-hidden="true")
+    div(class="modal-dialog")
+      div(class="modal-content")
+        div(class="modal-header")
+          button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+          h4(class="modal-title") Transfer Purchase
+        div(class="modal-body")
+          p(id="loadingScreenBody") 
+        div(class="modal-footer")
+          button(type="button", class="btn btn-default", data-dismiss="modal") Close
+
+block scripts
+  script(src="../javascripts/roles.js")

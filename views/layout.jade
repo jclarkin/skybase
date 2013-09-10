@@ -1,0 +1,54 @@
+doctype 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    block title
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    link(rel="stylesheet", href="stylesheets/layout.css")
+    block links
+  body
+    div(class="navbar navbar-inverse navbar-fixed-top")
+      div(class="container")
+        div(class="navbar-header")
+          button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+          a(class="navbar-brand", href="/") skybase
+        div(class="navbar-collapse collapse")
+          ul(class="nav navbar-nav")
+            li(class=place==='index'?"active":"")
+              a(href="/") Home
+            li(class="dropdown")
+              a(href="#", data-toggle="dropdown", role="menu") Browse 
+                b(class="caret")
+              ul(class="dropdown-menu")
+                li(class=place==='assemblies'?"active":"")
+                  a(href="assemblies.html") Assemblies
+                li(class=place==='maintprogs'?"active":"")
+                  a(href="maintprogs.html") Maintenance Programs
+                li(class=place==='partcatalogs'?"active":"")
+                  a(href="partcatalogs.html") Part Catalogs
+                li(class=place==='roles'?"active":"")
+                  a(href="roles.html") Role Templates
+            li(class=place==='about'?"active":"")
+              a(href="about.html") About
+            li(class=place==='contact'?"active":"")
+              a(href="contact.html") Contact
+          form(class="navbar-form navbar-right")
+            div(class="form-group")
+              input(type="text", placeholder="Username", class="form-control")
+            div(class="form-group")
+              input(type="password", placeholder="Password", class="form-control")
+            button(type="submit", class="btn btn-success") Sign in
+            
+    block body
+    
+    div(class="container")
+      hr
+      footer
+        p &copy; Skybase 2013
+        
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+  script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+  block scripts

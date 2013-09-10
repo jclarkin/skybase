@@ -1,0 +1,81 @@
+extends layout
+block title
+  title skybase - Assembly Baselines
+  
+block links
+  link(rel="stylesheet", href="stylesheets/assemblies.css")
+  
+block body
+  div(class="container")
+    h1 Assembly Baselines
+
+    div(class="row")
+      div(class="col-lg-4")
+        div(class="panel panel-default assembly")
+          div(class="panel-heading", data-code="ERJ190")
+            h4 Embraer ERJ 190
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          div(class="panel-body")
+            img(src="http://goo.gl/egE8oa")
+            p 
+            | A narrow-body medium-range twin-engine jet airliners produced by
+            | Brazilian aerospace conglomerate Embraer. 
+
+      div(class="col-lg-4")
+        div(class="panel panel-default assembly")
+          div(class="panel-heading", data-code="B757")
+            h4 Dyson Sphere
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          div(class="panel-body")
+            img(width="300", height="200", src="http://media.desura.com/cache/images/mods/1/16/15726/thumb_940x3000/Dyson_Sphere_Update.jpg")
+            p 
+            | This structure completely surrounds a star to make full use of 
+            | its solar energy.
+      
+      div(class="col-lg-4")
+        div(class="panel panel-default assembly")
+          div(class="panel-heading", data-code="B767")
+            h4 Alderson Disk
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          div(class="panel-body")
+            img(width="300", height="200", src="http://top5s.net/wp-content/uploads/2011/06/ringworld-tm1.jpg")
+            p 
+            | This structureis the shape of a disk. 
+            | Your civilization can live on either side, held by the gravity.
+      
+    div(class="row")
+      div(class="col-lg-4")
+        div(class="panel panel-default assembly")
+          div(class="panel-heading", data-code="B737NG")
+            h4 Globus Cassus
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          div(class="panel-body")
+            img(width="300", height="200", src="http://2.bp.blogspot.com/_UyiiKIoCPaA/THM-jWMvmqI/AAAAAAAAAB0/N3vVal8A6w4/s320/300px-Stanford-torus-by-donald-e-davis-med.jpg")
+            p 
+            | Blueprints to transform your world into a much bigger, hollow, 
+            | artificial world with the ecosphere on its inner surface.
+
+      div(class="col-lg-4")
+        div(class="panel panel-default assembly")
+          div(class="panel-heading", data-code="A340")
+            h4 Airbus A340
+              span(class="glyphicon glyphicon-cloud-download pull-right")
+          div(class="panel-body")
+            img(src="http://goo.gl/JAQhaJ" )
+            p 
+            | A long-range four-engine wide-body commercial passenger jet 
+            | airliner, developed and produced by Airbus Industries.
+
+  div(class="modal fade", id="loadingScreen", tabindex="-1", role="dialog", aria-hidden="true")
+    div(class="modal-dialog")
+      div(class="modal-content")
+        div(class="modal-header")
+          button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+          h4(class="modal-title") Transfer Purchase
+        div(class="modal-body")
+          p(id="loadingScreenBody") 
+        div(class="modal-footer")
+          button(type="button", class="btn btn-default", data-dismiss="modal") Close
+
+block scripts
+  script(src="../javascripts/assemblies.js")
